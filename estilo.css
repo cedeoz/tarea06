@@ -1,0 +1,137 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #11151b;
+}
+#menu{
+    background-color: rgb(241, 179, 44);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#menu h2 {
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#menu h2:hover {
+    color: white;
+}
+#titulo {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: black;
+
+}
+#titulo h1 {
+    font-size: 45px;
+    margin-bottom: calc(15px + 1%);
+    text-transform: uppercase;
+}
+
+#titulo h2 {
+    font-size: 20px;
+    margin-top: calc(10px + 8px);
+}
+#contenido{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #11151b;
+    
+}
+.imagen {
+    width: 390px;
+    background-color: #20252b;
+    color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+.imagen img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+.luke:hover {
+    box-shadow: 0 0 20px rgba(241, 179, 44, 0.6);
+}
+.darth:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+.imagen:hover {
+    transform: translateY(-10px);
+}
+
+.imagen:hover img {
+    filter: grayscale(0%);
+}
+.etiqueta {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10;
+}
+.jedi {
+    background-color: #00bcd4;
+}
+
+.sith {
+    background-color: #e60036;
+}
+.subir {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: orange;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+}
+.imagen h2 {
+    padding: 15px 20px 0;
+    font-size: 20px;
+}
+
+.imagen p {
+    padding: 0 20px 20px;
+}
+.imagen h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 25px 20px 0;
+}
+.imagen p {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding: 15px 20px 25px;
+}
